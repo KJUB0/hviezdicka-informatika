@@ -20,19 +20,8 @@ for riadok in range(0, vyska):
         
     else:
         for i in range(0, vyska):
-            if riadok == i:
-                print(hviezdicka, end=" ")
-            
-            elif i == vyska/2-0.5:
-                print(hviezdicka, end=" ")
-                
-            elif i == pocitadlo:
-                print(hviezdicka, end=' ')
-                
-            else:
-                print(end="  ")
-        pocitadlo -= 1
-            
+            print(hviezdicka if (riadok == i or i == vyska/2-0.5 or i == pocitadlo) else(' '), end=' ')
+        pocitadlo -= 1      
     
     print()
     
